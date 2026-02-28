@@ -1,0 +1,62 @@
+=========================================================
+      🚀 DINO TOOL - LOCKET FRIEND REQUEST SPAMMER 🚀
+=========================================================
+
+1. CÀI ĐẶT YÊU CẦU:
+-------------------
+- Tool yêu cầu cài đặt Python phiên bản 3.12 trở lên.
+- Bạn cần mở Terminal/CMD và chạy lệnh cài các thư viện cần thiết:
+  pip install requests tqdm colorama pystyle urllib3
+
+2. CÁCH CHẠY TOOL:
+------------------
+- Trên máy tính (Windows): Click đúp vào file `start.bat` để chạy nhanh.
+- Hoặc mở CMD tại thư mục tool và gõ: 
+  python dino-tool.py
+
+- Trên macOS / Linux: Mở Terminal tại thư mục và gõ:
+  python3 dino-tool.py
+
+3. LƯU Ý KHI DÙNG TOOL:
+-----------------------
+- KHÔNG treo tool quá lâu: Proxy xoay theo chu kỳ, treo lâu có thể khiến proxy chết dần và tool chạy chậm. Khi thấy số requests/giây giảm sút, hãy tắt tool và mở lại để fetch proxy mới.
+- Tốc độ phụ thuộc Proxy: Tool tự động kéo hàng ngàn proxy sẵn có trên mạng. Tuy nhiên, nếu bạn có proxy private xịn, hãy xoá trắng file `proxy.txt` hiện tại và dán proxy của bạn vào đó.
+- An Toàn: Locket có thể block 1 thiết bị request quá nhiều, vì vậy tool có rate-limit chuẩn để sống lâu.
+
+=========================================================
+  🔓 HƯỚNG DẪN CÁCH LẤY FIREBASE APPCHECK TOKEN LOCKET
+=========================================================
+
+Để tool hoạt động, Locket bắt buộc phải có "AppCheck Token" thật từ điện thoại đăng nhập để vượt qua lớp bảo mật của Google. Token thường sẽ sống được khoảng 30 đến 60 phút tuỳ thiết bị. Bạn lấy Token theo các bước sau:
+
+👉 Bước 1: Tải ứng dụng bắt gói tin (Sniffer/Proxy)
+  - iOS / iPhone: Tải "Stream" (hoặc HTTPCanary, Thor).
+  - PC / Laptop: Cài đặt phần mềm Burp Suite, Fiddler hoặc Charles Proxy.
+  - Android: Tải HTTPCanary hoặc PCapDroid.
+
+👉 Bước 2: Bật VPN của app bắt gói tin
+  - Mở app bắt gói tin vừa tải lên (ví dụ: Stream).
+  - Cài đặt cấu hình CA Certificate (Chứng chỉ bảo mật SSL) nếu app yêu cầu và kích hoạt VPN/Sniffing.
+
+👉 Bước 3: Thao tác trên Locket
+  - Quay lại màn hình chính của điện thoại, mở ứng dụng Locket lên.
+  - Thử đăng nhập lại hoặc vuốt tải lại Feed / Danh sách bạn bè.
+
+👉 Bước 4: Lọc gói tin và lấy Token
+  - Về lại app bắt gói tin (Stream) và bấm dừng quá trình bắt "Stop Sniffing".
+  - Chuyển sang lịch sử (History), lướt tìm những request (yêu cầu) có chữ: "POST" và gửi tới Domain có tên là:
+    • api.locketcamera.com 
+    (Hoặc đôi khi là www.googleapis.com)
+  - Ấn vào Request đó, chọn tab "Headers" (hoặc Request Headers).
+  - Tìm dòng Header có tên là `x-firebase-appcheck`.
+
+👉 Bước 5: Bỏ vào Tool
+  - Copy toàn bộ nội dung của dòng đó (Bắt buộc phải bắt đầu bằng chữ "eyJ...").
+  - Mở thư mục chứa Dino Tool trên máy tính.
+  - Mở file tên là `token.txt` lên, xoá nội dung cũ, dán token mới copy vào và `Ctrl + S` lưu lại.
+  - Mở Tool lên và trải nghiệm!
+
+=========================================================
+Mọi vấn đề cần giải đáp/báo lỗi, vui lòng liên hệ:
+📨 Telegram Hỗ Trợ: @dinostore01
+=========================================================
